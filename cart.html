@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brand Ecommerce - Cart</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="site-header" data-simple-header="true"></div>
+  <main class="page cart-page">
+    <section class="container">
+      <h1 class="cart-title">My cart (<span id="cart-total-count">0</span>)</h1>
+      <div class="cart-layout">
+        <section class="cart-card">
+          <div id="cart-items"></div>
+          <div class="cart-actions">
+            <a class="btn primary" href="grid-view.html">← Back to shop</a>
+            <button id="remove-all" class="btn ghost" type="button">Remove all</button>
+          </div>
+        </section>
+        <aside class="checkout-column">
+          <div class="coupon-card">
+            <p>Have a coupon?</p>
+            <div><input type="text" placeholder="Add coupon" /><button type="button">Apply</button></div>
+          </div>
+          <div class="summary-card">
+            <p><span>Subtotal:</span><strong id="subtotal">$0.00</strong></p>
+            <p><span>Discount:</span><em id="discount">-$0.00</em></p>
+            <p><span>Tax:</span><i id="tax">+$0.00</i></p>
+            <hr />
+            <p class="total"><span>Total:</span><strong id="grand-total">$0.00</strong></p>
+            <button class="checkout-btn" type="button">Checkout</button>
+            <div class="payments"><span>Amex</span><span>MC</span><span>PayPal</span><span>VISA</span><span>Pay</span></div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="perks">
+        <div><span>▣</span><strong>Secure payment</strong><p>Have you ever finally just</p></div>
+        <div><span>▤</span><strong>Customer support</strong><p>Have you ever finally just</p></div>
+        <div><span>▰</span><strong>Free delivery</strong><p>Have you ever finally just</p></div>
+      </div>
+
+      <section class="saved-card">
+        <h2>Saved for later</h2>
+        <div id="saved-products" class="saved-grid"></div>
+      </section>
+
+      <section class="discount-banner">
+        <div><h2>Super discount on more than 100 USD</h2><p>Have you ever finally just write dummy info</p></div>
+        <a class="btn orange-btn" href="grid-view.html">Shop now</a>
+      </section>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brand Ecommerce - Grid View</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+  <main class="page">
+    <div class="container breadcrumb">Home › Clothings › Men's wear › Summer clothing</div>
+    <section class="container catalog-layout">
+      <aside class="filters" data-filters></aside>
+      <section class="catalog-content">
+        <div class="catalog-toolbar">
+          <p>12,911 items in <strong>Mobile accessory</strong></p>
+          <label class="check-line"><input type="checkbox" /> Verified only</label>
+          <select><option>Featured</option><option>Newest</option><option>Best rating</option></select>
+          <div class="view-switch">
+            <a class="active" href="grid-view.html" title="Grid view">▦</a>
+            <a href="list-view.html" title="List view">☰</a>
+          </div>
+        </div>
+        <div class="active-filters">
+          <span>Samsung ×</span><span>Apple ×</span><span>Poco ×</span><span>Metallic ×</span><span>4 star ×</span><span>3 star ×</span>
+          <button type="button">Clear all filter</button>
+        </div>
+        <div id="catalog-grid" class="product-grid"></div>
+        <div class="pagination"><button>Show 10⌄</button><button>‹</button><button class="active">1</button><button>2</button><button>3</button><button>›</button></div>
+      </section>
+    </section>
+  </main>
+  <div id="newsletter"></div>
+  <div id="site-footer"></div>
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/catalog.js"></script>
+</body>
+</html>
